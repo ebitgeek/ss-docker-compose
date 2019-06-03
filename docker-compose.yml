@@ -1,0 +1,11 @@
+version: '3'
+services:
+	shadowsocks:
+		image: shadowsocks/shadowsocks-libev
+		ports:
+			- "45567:8388/tcp"
+			- "45567:8388/udp"
+		environment:
+			- METHOD=aes-256-CFB
+			- PASSWORD=3Qh3M9vReE
+		restart: always
