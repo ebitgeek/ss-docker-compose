@@ -6,6 +6,6 @@ services:
 			- "45567:8388/tcp"
 			- "45567:8388/udp"
 		environment:
-			- METHOD=aes-256-CFB
-			- PASSWORD=3Qh3M9vReE
+			- METHOD=aes-256-cfb
+			- PASSWORD=123456
 		restart: always
